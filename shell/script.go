@@ -12,7 +12,6 @@ func setScript() []string {
 func setflag() []string {
 	//　ここに使用できる変数を追加してください
 	s := []string{
-		"a",
 		"help",
 	}
 	return s
