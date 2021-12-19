@@ -5,6 +5,8 @@ func setScript() []string {
 	s := []string{
 		"a",
 		"pwd",
+		"cat",
+		"ls",
 	}
 	return s
 }

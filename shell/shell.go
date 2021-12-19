@@ -2,6 +2,8 @@ package shell
 
 import (
 	"mygoshell.com/s/a"
+	"mygoshell.com/s/cat"
+	"mygoshell.com/s/ls"
 	"mygoshell.com/s/pwd"
 	"mygoshell.com/s/shellerr"
 )
@@ -36,6 +38,10 @@ func script(sarry []string) bool {
 		return true
 	} else if scriptNom == 1 {
 		return pwd.Script()
+	} else if scriptNom == 2 {
+		return cat.Script()
+	} else if scriptNom == 3 {
+		return ls.Script()
 	}
 	return true
 }
