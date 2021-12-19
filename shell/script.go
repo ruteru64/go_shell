@@ -7,6 +7,8 @@ func setScript() []string {
 		"pwd",
 		"cat",
 		"ls",
+		"mkdir",
+		"touch",
 	}
 	return s
 }

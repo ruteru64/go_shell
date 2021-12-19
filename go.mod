@@ -14,4 +14,6 @@ replace local.packages/cat => ./cat
 
 replace local.packages/ls => ./ls
 
+replace local.packages/make => ./make
+
 require golang.org/x/tools v0.1.8 // indirect

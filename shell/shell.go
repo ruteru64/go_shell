@@ -4,6 +4,7 @@ import (
 	"mygoshell.com/s/a"
 	"mygoshell.com/s/cat"
 	"mygoshell.com/s/ls"
+	"mygoshell.com/s/make"
 	"mygoshell.com/s/pwd"
 	"mygoshell.com/s/shellerr"
 )
@@ -42,6 +43,10 @@ func script(sarry []string) bool {
 		return cat.Script()
 	} else if scriptNom == 3 {
 		return ls.Script()
+	} else if scriptNom == 4 {
+		return make.Mkdir()
+	} else if scriptNom == 5 {
+		return make.Touch()
 	}
 	return true
 }
