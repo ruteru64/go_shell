@@ -9,6 +9,7 @@ func setScript() []string {
 		"ls",
 		"mkdir",
 		"touch",
+		"echo",
 	}
 	return s
 }

@@ -3,6 +3,7 @@ package shell
 import (
 	"mygoshell.com/s/a"
 	"mygoshell.com/s/cat"
+	"mygoshell.com/s/echo"
 	"mygoshell.com/s/ls"
 	"mygoshell.com/s/make"
 	"mygoshell.com/s/pwd"
@@ -47,6 +48,8 @@ func script(sarry []string) bool {
 		return make.Mkdir()
 	} else if scriptNom == 5 {
 		return make.Touch()
+	} else if scriptNom == 6 {
+		return echo.Script()
 	}
 	return true
 }
